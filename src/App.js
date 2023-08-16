@@ -1,7 +1,8 @@
-import logo from "./logo.svg"
 import "./App.css"
-import { useState } from "react"
-import Comments from "./components/comments"
+import AddComments from "./components/add-comments"
+import ListComments from "./components/list-comments"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 // function App() {
 //   return (
@@ -29,7 +30,9 @@ import Comments from "./components/comments"
 function App() {
   return (
     <div className="App">
-      <Comments />
+      <ToastContainer />
+      <AddComments />
+      <ListComments />
     </div>
   )
 }
